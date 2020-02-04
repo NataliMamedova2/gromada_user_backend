@@ -1,0 +1,6 @@
+swiftmailer:
+    transport:  smtp
+    host: mailcatcher
+    port: 1025
+    encryption: null
+    auth_mode: null

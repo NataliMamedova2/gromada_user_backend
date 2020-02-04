@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="cabinet.users.notfound">
+               <source>cabinet.users.notfound</source>
+               <target>Користувач не знайдений</target>
+            </trans-unit>
+            <trans-unit id="cabinet.local_community.edrpou.exist">
+               <source>cabinet.local_community.edrpou.exist</source>
+               <target>Громада з таким ЕДРПОУ вже зареєстрована</target>
+            </trans-unit>
+            <trans-unit id="cabinet.users.exist">
+               <source>cabinet.users.exist</source>
+               <target>Користувач з таким логіном або емайл вже існує</target>
+             </trans-unit>
+             <trans-unit id="cabinet.users.email.exist">
+                <source>cabinet.users.email.exist</source>
+                <target>Користувач з таким емайл {email} вже існує</target>
+            </trans-unit>
+             <trans-unit id="cabinet.mail.head.invite.h1">
+                <source>cabinet.mail.head.invite.h1</source>
+                <target>Вітаємо, {name}</target>
+             </trans-unit>
+              <trans-unit id="cabinet.mail.head.invite.p">
+                 <source>cabinet.mail.head.invite.p</source>
+                 <target>Для підтвердження реєстрації перейдіть за посиланням:</target>
+              </trans-unit>
+              <trans-unit id="cabinet.mail.user.invite.p">
+               <source>cabinet.mail.user.invite.p</source>
+               <target>Вас було рекомендовано як довірену особу територіальної громади. {tag}Для продовження реєстрації перейдіть за посиланням: </target>
+              </trans-unit>
+              <trans-unit id="cabinet.mail.invite.subject">
+               <source>cabinet.mail.invite.subject</source>
+               <target>Підтвердження реєстрації в реєстрі територіальних громад</target>
+              </trans-unit>
+               <trans-unit id="cabinet.mail.invite.footer.part1">
+                 <source>cabinet.mail.invite.footer.part1</source>
+                 <target>У разі виникнення питань при роботі з системою ви можете ознайомитися з</target>
+               </trans-unit>
+               <trans-unit id="cabinet.mail.invite.footer.part2">
+                <source>cabinet.mail.invite.footer.part2</source>
+                <target>розділом допомоги</target>
+              </trans-unit>
+               <trans-unit id="cabinet.mail.invite.footer.part3">
+                  <source>cabinet.mail.invite.footer.part3</source>
+                  <target> або зателефонувати до технічної підтримки за номерами:</target>
+               </trans-unit>
+               <trans-unit id="cabinet.user.registration.final">
+                  <source>cabinet.user.registration.final</source>
+                  <target> Ви ще не підтвердили свій аккаунт. Будь ласка, перевірте вашу електронну адресу {email}. Лист надійде з адреси support.gromada@dmsu.gov.ua. Обов'язково перевірте папку Спам або подібну до неї. </target>
+               </trans-unit>
+               <trans-unit id="cabinet.users.not.found">
+                 <source>cabinet.users.not.found</source>
+                 <target>Користувача не знайдено</target>
+               </trans-unit>
+                <trans-unit id="cabinet.users.login.exist">
+                    <source>cabinet.users.login.exist</source>
+                    <target>Користувач з таким логіном або з таким сертифікатом вже існує</target>
+                </trans-unit>
+                <trans-unit id="cabinet.lc.not.found">
+                    <source>cabinet.lc.not.found</source>
+                    <target>Помилка. Територіальна громада не знайдена</target>
+                </trans-unit>
+                <trans-unit id="cabinet.lc.not.active">
+                  <source>cabinet.lc.not.active</source>
+                   <target>Помилка. Територіальна громада не активована</target>
+                </trans-unit>
+                <trans-unit id="cabinet.users.not.old.email">
+                  <source>cabinet.users.not.old.email</source>
+                   <target>Помилка. Невірні дані поля E-mail. Вкажіть E-mail, який ви вказували при реєстрації</target>
+                </trans-unit>
+                <trans-unit id="cabinet.users.check.email.message">
+                  <source>cabinet.users.check.email.message</source>
+                   <target>Будь ласка, перевірте вашу електронну адресу. Для відновлення електронної адреси перейдіть за посиланням у листі. Лист надійде з адреси support.gromada@dmsu.gov.ua. Обов'язково перевірте папку Спам або подібну до неї. </target>
+                </trans-unit>
+                <trans-unit id="cabinet.users.check.email.message.restore.login">
+                  <source>cabinet.users.check.email.message.restore.login</source>
+                   <target>Будь ласка, перевірте вашу електронну адресу.  Лист надійде з адреси support.gromada@dmsu.gov.ua. Обов'язково перевірте папку Спам або подібну до неї. </target>
+                </trans-unit>
+                 <trans-unit id="cabinet.users.change.email.subject">
+                  <source>cabinet.users.change.email.subject</source>
+                   <target>Відновлення електронної адреси у системі "Реєстр територіальних громад"</target>
+                </trans-unit>
+                 <trans-unit id="cabinet.users.change.password.subject">
+                  <source>cabinet.users.change.password.subject</source>
+                   <target>Відновлення пароля у системі "Реєстр територіальних громад"</target>
+                  </trans-unit>
+                 <trans-unit id="cabinet.users.change.login.subject">
+                   <source>cabinet.users.change.login.subject</source>
+                    <target>Відновлення логiна у системі "Реєстр територіальних громад"</target>
+                 </trans-unit>
+                 <trans-unit id="cabinet.users.restore.email.success">
+                  <source>cabinet.users.restore.email.success</source>
+                   <target>Email адреса успішно відновлена. Можете увійти до системи</target>
+                 </trans-unit>
+                 <trans-unit id="cabinet.users.restore.password.success">
+                   <source>cabinet.users.restore.password.success</source>
+                    <target>Пароль успішно змінено. Можете увійти до системи</target>
+                  </trans-unit>
+                 <trans-unit id="cabinet.user.local_community.status_1">
+                     <source>cabinet.user.local_community.status_1</source>
+                      <target>Активний</target>
+                 </trans-unit>
+                 <trans-unit id="cabinet.user.local_community.status_0">
+                  <source>cabinet.user.local_community.status_0</source>
+                   <target>Видалений</target>
+                 </trans-unit>
+                 <trans-unit id="cabinet.user.local_community.status_2">
+                   <source>cabinet.user.local_community.status_2</source>
+                    <target>Не активний</target>
+                  </trans-unit>
+                  <trans-unit id="cabinet.user.status_1">
+                   <source>cabinet.user.status_1</source>
+                    <target>Активний</target>
+                   </trans-unit>
+                   <trans-unit id="cabinet.user.status_0">
+                    <source>cabinet.user.status_0</source>
+                     <target>Видалений</target>
+                   </trans-unit>
+                  <trans-unit id="cabinet.user.status_2">
+                     <source>cabinet.user.status_2</source>
+                      <target>Не активний</target>
+                   </trans-unit>
+                   <trans-unit id="cabinet.user.status_3">
+                    <source>cabinet.user.status_3</source>
+                     <target>очікується підтвердження реєстрації</target>
+                  </trans-unit>
+                  <trans-unit id="cabinet.user.local_community.status_3">
+                 <source>cabinet.user.local_community.status_3</source>
+                  <target>Очікується підтвердження реєстрації</target>
+                </trans-unit>
+                <trans-unit id="cabinet.users.change.email.h1">
+                  <source>cabinet.users.change.email.h1</source>
+                   <target>Ви надіслали запит на зміну електронної адреси у системі "Реєстр територіальних громад".</target>
+                </trans-unit>
+                 <trans-unit id="cabinet.users.change.email.p">
+                  <source>cabinet.users.change.email.p</source>
+                   <target>Якщо ж ви цього не робили, негайно повідомте у службу підтримки!{tag}Для зміни електронної адреси перейдіть за посиланням:</target>
+                </trans-unit>
+                <trans-unit id="cabinet.users.change.old.email.p">
+                  <source>cabinet.users.change.old.email.p</source>
+                   <target>Якщо ж ви цього не робили, негайно повідомте у службу підтримки!</target>
+                </trans-unit>
+                 <trans-unit id="cabinet.users.change.error.invalid.data">
+                  <source>cabinet.users.change.error.invalid.data</source>
+                   <target>Помилка. Пошкоджені дані. Спробуйте знову</target>
+                </trans-unit>
+                 <trans-unit id="cabinet.community.not.found">
+                   <source>cabinet.community.not.found</source>
+                   <target>Територіальна громада не знайдена </target>
+                 </trans-unit>
+        </body>
+    </file>
+</xliff>

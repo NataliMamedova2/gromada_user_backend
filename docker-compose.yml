@@ -1,0 +1,56 @@
+version: "3"
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./cabinet.at:/cabinet.at
+      - ./docker-env/services.conf:/etc/nginx/conf.d/services.conf
+      # - ./docker-env/extensions/cac.so:/usr/local/lib/php/extensions/no-debug-non-zts-20170718/cac.so
+      # - ./docker-env/extensions/:/usr/local/lib/php/extensions/no-debug-non-zts-20170718/
+      - ./docker-env/php/php.ini:/usr/local/etc/php/php.ini
+    links:
+      - php
+
+  php:
+    build: .
+    ports:
+      - 9000:9000
+    environment:
+      XDEBUG_CONFIG: "remote_host=172.17.0.1 remote_autostart=on var_display_max_depth=10 idekey=PHPSTORM"
+      PHP_IDE_CONFIG: "serverName=cabinet.cx"
+    volumes:
+      - ./cabinet.at:/cabinet.at
+    links:
+      # - db
+      - redis
+      - rabbit
+      - mailcatcher
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    volumes:
+      - ./docker-env/redis:/var/lib/redis
+
+  rabbit:
+    image: rabbitmq:3-management
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    hostname: "rabbit"
+    environment:
+      RABBITMQ_ERLANG_COOKIE: "SWQOKODSQALRPCLNMEQG"
+      RABBITMQ_DEFAULT_USER: "guest"
+      RABBITMQ_DEFAULT_PASS: "guest"
+      RABBITMQ_DEFAULT_VHOST: "/"
+    labels:
+      NAME: "rabbitmq"
+    # volumes:
+    #   - ./docker-env/rabbitmq/enabled_plugins:/etc/rabbitmq/enabled_plugins
+  mailcatcher:
+    image: yappabe/mailcatcher
+    ports:
+      - 1025:1025
+      - 1080:1080

@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="cabinet.validator.serial">
+              <source>cabinet.validator.serial</source>
+              <target>Заповніть поле serial</target>
+            </trans-unit>
+            <trans-unit id="cabinet.validator.issuer">
+              <source>cabinet.validator.issuer</source>
+              <target>Заповніть поле issuer</target>
+            </trans-unit>
+            <trans-unit id="cabinet.validator.login">
+              <source>cabinet.validator.login</source>
+              <target>Заповніть поле login</target>
+            </trans-unit>
+            <trans-unit id="cabinet.validator.password">
+              <source>cabinet.validator.password</source>
+              <target>Заповніть поле password</target>
+            </trans-unit>
+            <trans-unit id="cabinet.validator.edrpou">
+              <source>cabinet.validator.edrpou</source>
+              <target>Заповніть поле ЕДРПОУ</target>
+            </trans-unit>
+            <trans-unit id="cabinet.validator.community.title">
+              <source>cabinet.validator.community.title</source>
+              <target>Заповніть поле Організація</target>
+            </trans-unit>
+             <trans-unit id="cabinet.validator.community.location">
+              <source>cabinet.validator.community.location</source>
+              <target>Заповніть поле "Місце знаходження"</target>
+             </trans-unit>
+              <trans-unit id="cabinet.dependent.users.firstName">
+               <source>cabinet.dependent.users.firstName</source>
+               <target>Ім'я уповноваженої особи обов'язкове для заповнення</target>
+              </trans-unit>
+               <trans-unit id="cabinet.dependent.users.lastName">
+                 <source>cabinet.dependent.users.lastName</source>
+                 <target>Прізвище уповноваженої особи обов'язкове для заповнення</target>
+               </trans-unit>
+                <trans-unit id="cabinet.dependent.users.middleName">
+                  <source>cabinet.dependent.users.middleName</source>
+                  <target>По батькові уповноваженої особи обов'язкове для заповнення</target>
+                </trans-unit>
+                <trans-unit id="cabinet.dependent.users.email">
+                  <source>cabinet.dependent.users.email</source>
+                  <target>Емайл уповноваженої особи обов'язкове для заповнення</target>
+                </trans-unit>
+                 <trans-unit id="cabinet.head.user.firstName">
+                   <source>cabinet.head.user.firstName</source>
+                   <target>Поле iм'я обов'язкове для заповнення</target>
+                  </trans-unit>
+                   <trans-unit id="cabinet.head.user.lastName">
+                     <source>cabinet.head.user.lastName</source>
+                     <target>Поле прізвище обов'язкове для заповнення</target>
+                   </trans-unit>
+                    <trans-unit id="cabinet.head.user.middleName">
+                      <source>cabinet.head.user.middleName</source>
+                      <target>Поле по батькові обов'язкове для заповнення</target>
+                    </trans-unit>
+                    <trans-unit id="cabinet.head.user.email">
+                      <source>cabinet.head.user.email</source>
+                      <target>Поле емайл обов'язкове для заповнення</target>
+                    </trans-unit>
+                 <trans-unit id="cabinet.validator.email">
+                  <source>cabinet.validator.email</source>
+                  <target>Невірний формат. Дозволені адреси: .gov.ua та .укр</target>
+                 </trans-unit>
+                   <trans-unit id="cabinet.validator.password.length">
+                   <source>cabinet.validator.password.length</source>
+                   <target>Мінімальна довжина поля "Пароль": 9</target>
+                  </trans-unit>
+                   <trans-unit id="cabinet.validator.edrpou.length">
+                     <source>cabinet.validator.edrpou.length</source>
+                     <target>Мінімальна довжина поля "ЕДРПОУ": 8</target>
+                   </trans-unit>
+                   <trans-unit id="cabinet.validator.login.length">
+                  <source>cabinet.validator.login.length</source>
+                  <target>Мінімальна довжина поля "Логін": 2</target>
+                 </trans-unit>
+                  <trans-unit id="cabinet.validator.user.hash">
+                   <source>cabinet.validator.user.hash</source>
+                   <target>Посилання не дійсне</target>
+                  </trans-unit>
+        </body>
+    </file>
+</xliff>

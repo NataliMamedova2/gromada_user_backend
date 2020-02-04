@@ -1,0 +1,50 @@
+doctrine:
+    dbal:
+        types:
+            hstore: App\DBAL\Types\HstoreType
+        mapping_types:
+            cidr: string
+            hstore: hstore
+            ltree: string
+            _ltree: string
+            _int4: integer
+            _text: text
+        driver: 'pdo_pgsql'
+        server_version: '10.8'
+        charset: utf8
+        url: '%env(resolve:DATABASE_URL)%'
+    orm:
+        dql:
+            string_functions:
+                fetchval: App\DBAL\DoctrineFunctions\FetchvalFunction
+                LTREE_OPERATOR: App\DBAL\DoctrineFunctions\PostgresLtreeOperatorFunctionNode
+        auto_generate_proxy_classes: true
+        metadata_cache_driver:
+            type: service
+            id: doctrine.system_cache_provider
+        query_cache_driver:
+            type: service
+            id: doctrine.system_cache_provider
+        result_cache_driver:
+            type: service
+            id: doctrine.result_cache_provider
+        naming_strategy: doctrine.orm.naming_strategy.underscore
+        auto_mapping: true
+        mappings:
+            App:
+                is_bundle: false
+                type: annotation
+                dir: '%kernel.project_dir%/src/Entity'
+                prefix: 'App\Entity'
+                alias: App
+services:
+    doctrine.result_cache_provider:
+        class: Symfony\Component\Cache\DoctrineProvider
+        public: false
+        arguments:
+            - '@doctrine.result_cache_pool'
+    doctrine.system_cache_provider:
+        class: Symfony\Component\Cache\DoctrineProvider
+        public: false
+        arguments:
+            - '@doctrine.system_cache_pool'
